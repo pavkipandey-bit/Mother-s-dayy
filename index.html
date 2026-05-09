@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Mother's Day 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background:linear-gradient(135deg,#ffe6f0,#fff5f7,#ffe4e1);
+    position:relative;
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:1;
+    pointer-events:none;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff5e8a;
+    animation:float 10s linear infinite;
+    opacity:0.7;
+    font-size:22px;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) scale(0.7);
+        opacity:0;
+    }
+
+    10%{
+        opacity:0.8;
+    }
+
+    100%{
+        transform:translateY(-120vh) scale(1.4);
+        opacity:0;
+    }
+}
+
+.main{
+    position:relative;
+    z-index:2;
+    padding:50px 20px 120px;
+    text-align:center;
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:4.5rem;
+    color:#ff4f81;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:1.1rem;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.gallery img{
+    width:220px;
+    height:270px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.intro{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,0.85);
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    line-height:1.9;
+    color:#444;
+    font-size:1.05rem;
+}
+
+.envelope-section{
+    margin-top:70px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.click-text{
+    margin-bottom:20px;
+    color:#ff4f81;
+    font-weight:600;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:0.5;}
+    50%{opacity:1;}
+    100%{opacity:0.5;}
+}
+
+.envelope{
+    position:relative;
+    width:320px;
+    height:220px;
+    cursor:pointer;
+    transition:0.5s;
+    margin-bottom:250px;
+}
+
+.envelope-body{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#ff9dbb;
+    border-radius:0 0 20px 20px;
+    z-index:1;
+}
+
+.envelope-flap{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#ff7ca5;
+    clip-path:polygon(0 0,50% 55%,100% 0);
+    transform-origin:top;
+    transition:1s;
+    z-index:3;
+}
+
+.letter{
+    position:absolute;
+    width:90%;
+    height:420px;
+    background:white;
+    left:5%;
+    bottom:0;
+    border-radius:15px;
+    padding:25px;
+    overflow-y:auto;
+    text-align:left;
+    transition:1s;
+    z-index:2;
+    transform:translateY(70%);
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.letter h2{
+    text-align:center;
+    margin-bottom:15px;
+    color:#ff4f81;
+    font-family:'Great Vibes',cursive;
+    font-size:2.2rem;
+}
+
+.letter p{
+    color:#555;
+    line-height:1.8;
+    font-size:0.95rem;
+}
+
+.envelope.open .envelope-flap{
+    transform:rotateX(180deg);
+}
+
+.envelope.open .letter{
+    transform:translateY(-220px);
+}
+
+.footer{
+    margin-top:50px;
+    color:#888;
+    font-size:0.95rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <div class="heart" style="left:5%; animation-delay:0s;">💖</div>
+    <div class="heart" style="left:15%; animation-delay:2s;">💕</div>
+    <div class="heart" style="left:28%; animation-delay:5s;">💗</div>
+    <div class="heart" style="left:40%; animation-delay:1s;">💞</div>
+    <div class="heart" style="left:52%; animation-delay:4s;">💖</div>
+    <div class="heart" style="left:67%; animation-delay:6s;">💕</div>
+    <div class="heart" style="left:80%; animation-delay:3s;">💗</div>
+    <div class="heart" style="left:92%; animation-delay:7s;">💞</div>
+</div>
+
+<div class="main">
+
+    <h1>Happy Mother's Day 💖</h1>
+
+    <p class="subtitle">
+        For the woman who makes every day brighter ✨
+    </p>
+
+    <div class="gallery">
+        <img src="mom1.jpeg">
+        <img src="mom2.jpeg">
+        <img src="mom3.jpeg">
+    </div>
+
+    <div class="intro">
+        Maa, no words could ever truly explain how much you mean to me.
+        Your love feels like home, your voice feels like comfort,
+        and your presence makes everything feel okay.
+        Every little thing you do carries love in ways I notice more and more every day 🤍
+    </div>
+
+    <div class="envelope-section">
+
+        <div class="click-text">
+            💌 Click the envelope to open your letter
+        </div>
+
+        <div class="envelope" onclick="openEnvelope()">
+
+            <div class="envelope-flap"></div>
+
+            <div class="letter">
+
+                <h2>Dear Maa 🌸</h2>
+
+                <p>
+                    Thank you for every sacrifice you made silently,
+                    every prayer you whispered for me,
+                    every sleepless night,
+                    every warm hug,
+                    and every little thing you do that often goes unnoticed.
+                    <br><br>
+
+                    You are my home, my comfort,
+                    my strength, and my safest place.
+                    No matter how difficult life gets,
+                    your love always gives me courage.
+                    <br><br>
+
+                    I may not say it every day,
+                    but I am endlessly grateful for you.
+                    Your care, your patience,
+                    your love, and your support
+                    mean more to me than words can ever express.
+                    <br><br>
+
+                    Thank you for being my mother,
+                    my guide, and my forever best friend 🤍
+                    <br><br>
+
+                    Happy Mother's Day 💖
+                </p>
+
+            </div>
+
+            <div class="envelope-body"></div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Made with infinite love 🌷
+    </div>
+
+</div>
+
+<script>
+
+function openEnvelope(){
+    document.querySelector('.envelope').classList.toggle('open');
+}
+
+</script>
+
+</body>
+</html>
